@@ -5,7 +5,7 @@ const schema = buildSchema(`
         id: ID
         firstName: String
         lastName: String
-        gender: Gender
+        sex: Sex
         age: Int
         language: String
         email: String
@@ -17,7 +17,7 @@ const schema = buildSchema(`
         lastName: String
     }
 
-    enum Gender {
+    enum Sex {
         MALE
         FEMALE
         OTHER
@@ -31,7 +31,7 @@ const schema = buildSchema(`
         id: ID
         firstName: String!
         lastName: String
-        gender: Gender
+        sex: Sex
         age: Int
         language: String
         email: String

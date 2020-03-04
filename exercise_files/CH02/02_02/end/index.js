@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 });
 
 class Friend {
-    constructor(id, { firstName, lastName, gender, language, email }) {
+    constructor(id, { firstName, lastName, sex, language, email }) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.gender = gender;
+        this.sex = sex;
         this.language = language;
         this.email = email; 
     }
@@ -27,7 +27,7 @@ const root = {
             "id": 28718992,
             "firstName": "Manny",
             "lastName": "Henri",
-            "gender": "Male",
+            "sex": "Male",
             "language": "English",
             "emails": [
                 { email: "me@me.com" }, 

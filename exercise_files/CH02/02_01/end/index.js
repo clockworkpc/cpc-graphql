@@ -13,7 +13,7 @@ const root = { friend: () => {
         "id": 28718992,
         "firstName": "Manny",
         "lastName": "Henri",
-        "gender": "Male",
+        "sex": "Male",
         "language": "English",
         "emails": [
             { email: "me@me.com" }, 

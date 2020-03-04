@@ -5,7 +5,7 @@ const schema = buildSchema(`
         id: ID
         firstName: String
         lastName: String
-        gender: String
+        sex: String
         language: String
         email: String
     }

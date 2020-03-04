@@ -6,7 +6,7 @@ const typeDefs = `
         id: ID
         firstName: String
         lastName: String
-        gender: Gender
+        sex: Sex
         age: Int
         language: String
         email: String
@@ -18,7 +18,7 @@ const typeDefs = `
         lastName: String
     }
 
-    enum Gender {
+    enum Sex {
         MALE
         FEMALE
         OTHER
@@ -32,7 +32,7 @@ const typeDefs = `
         id: ID
         firstName: String!
         lastName: String
-        gender: Gender
+        sex: Sex
         age: Int
         language: String
         email: String

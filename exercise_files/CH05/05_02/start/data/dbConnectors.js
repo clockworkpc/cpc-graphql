@@ -16,7 +16,7 @@ const friendSchema = new mongoose.Schema({
     lastName: {
         type: String
     },
-    gender: {
+    sex: {
         type: String
     },
     age: {

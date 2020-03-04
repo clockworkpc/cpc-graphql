@@ -13,7 +13,7 @@ export const resolvers = {
             const newFriend = new Friends({
                 firstName: input.firstName,
                 lastName: input.lastName,
-                gender: input.gender,
+                sex: input.sex,
                 age: input.age,
                 language: input.language,
                 email: input.email,

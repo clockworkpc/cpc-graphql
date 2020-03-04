@@ -5,7 +5,7 @@ const schema = buildSchema(`
         id: ID
         firstName: String
         lastName: String
-        gender: String
+        sex: String
         age: Int
         language: String
         email: String
@@ -19,7 +19,7 @@ const schema = buildSchema(`
         id: ID
         firstName: String!
         lastName: String
-        gender: String
+        sex: String
         age: Int
         language: String
         email: String

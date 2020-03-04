@@ -1,9 +1,9 @@
 class Friend {
-    constructor(id, { firstName, lastName, gender, age, language, email }) {
+    constructor(id, { firstName, lastName, sex, age, language, email }) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.gender = gender;
+        this.sex = sex;
         this.age = age;
         this.language = language;
         this.email = email; 

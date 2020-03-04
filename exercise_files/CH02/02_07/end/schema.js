@@ -6,7 +6,7 @@ const typeDefs = `
         id: ID
         firstName: String
         lastName: String
-        gender: Gender
+        sex: Sex
         age: Int
         language: String
         email: String
@@ -14,14 +14,14 @@ const typeDefs = `
     }
 
     type Contact {
-        firstName: String
-        lastName: String
+      firstName: String
+      lastName: String
     }
 
-    enum Gender {
-        MALE
-        FEMALE
-        OTHER
+    enum Sex {
+      MALE
+      FEMALE
+      OTHER
     }
 
     type Query {
@@ -32,7 +32,7 @@ const typeDefs = `
         id: ID
         firstName: String!
         lastName: String
-        gender: Gender
+        sex: Sex
         age: Int
         language: String
         email: String
@@ -40,8 +40,8 @@ const typeDefs = `
     }
 
     input ContactInput {
-        firstName: String
-        lastName: String 
+      firstName: String
+      lastName: String
     }
 
     type Mutation {
@@ -49,6 +49,6 @@ const typeDefs = `
     }
 `;
 
-const schema = makeExecutableSchema({ typeDefs, resolvers});
+const schema = makeExecutableSchema( { typeDefs, resolvers } );
 
 export { schema };
