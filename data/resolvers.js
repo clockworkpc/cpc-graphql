@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { Friends } from 'dbConnectors';
+import { Friends } from './dbConnectors';
 
 // resolver map
 export const resolvers = {
