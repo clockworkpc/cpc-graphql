@@ -17,7 +17,7 @@ export const resolvers = {
         age: input.age,
         language: input.language,
         email: input.email,
-        contacts: input.contact
+        contacts: input.contacts
       });
 
       newFriend.id = newFriend._id;
@@ -29,5 +29,22 @@ export const resolvers = {
         })
       })
     },
-  },
+    updateFriend: (root, { input }) => {
+      return new Promise((resolve, object) => {
+        Friends.findOneAndUpdate({ _id: input.id },
+          input, { new: true },
+          (err, friend) => {
+            if (err) reject(err)
+            else resolve(friend)
+          })
+      })
+    },
+    deleteFriend: (root, { id }) => {
+      return new Promise((resolve, object) => {
+        Friends.remove({ _id: id }, (err) => {
+          err ? reject(err) : resolve('Successfully deleted friend')
+        })
+      })
+    }
+  }
 };
