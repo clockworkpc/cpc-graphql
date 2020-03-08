@@ -18,6 +18,9 @@ export const resolvers = {
           //     });
           //   });
           // },
+          getFriends: () => {
+            return Friends.findAll();
+          },
           getAliens: () => {
             return Aliens.findAll();
           }
