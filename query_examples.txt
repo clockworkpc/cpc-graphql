@@ -1,0 +1,31 @@
+query {
+  one: getOneFriend(id: "5e645d6e7457573b7fa42b3b") {
+    ...nameFragment
+    ...contactFragment
+    ...personalDetailsFragment 
+  }
+  two: getOneFriend(id: "5e647b4f70669c751a2ea7be") {
+    ...nameFragment
+    ...contactFragment
+    ...personalDetailsFragment
+  }
+}
+
+fragment nameFragment on Friend {
+  firstName
+  lastName
+}
+
+fragment contactFragment on Friend {
+  email
+  contacts {
+    firstName
+    lastName
+  }
+}
+
+fragment personalDetailsFragment on Friend {
+  age
+  sex
+  language
+}
