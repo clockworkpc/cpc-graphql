@@ -48,20 +48,12 @@ const sequelize = new Sequelize('database', null, null, {
 });
 
 const Aliens = sequelize.define('aliens', {
-  firstName: {
-    type: Sequelize.STRING
-  },
-  lastName: {
-    type: Sequelize.STRING
-  },
-  planet: {
-    type: Sequelize.STRING
-  }
+  firstName: { type: Sequelize.STRING },
+  lastName: { type: Sequelize.STRING },
+  planet: { type: Sequelize.STRING }
 });
 
-Aliens.sync({
-  force: true
-}).then(() => {
+Aliens.sync({ force: true }).then(() => {
   _.times(10, (i) => {
     Aliens.create({
       firstName: casual.first_name,
@@ -71,7 +63,4 @@ Aliens.sync({
   });
 });
 
-export {
-  Friends,
-  Aliens
-};
+export { Friends, Aliens };
