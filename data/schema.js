@@ -32,9 +32,9 @@ const typeDefs = `
 
     type Query {
         getOneFriend(id: ID!): Friend
-        getAliens: [Alien]
-        getOneAlien(id: ID): Alien
         getFriends: [Friend]
+        getOneAlien(id: ID): Alien
+        getAliens: [Alien]
     }
 
     input FriendInput {

@@ -11,6 +11,19 @@ export const resolvers = {
         });
       });
     },
+
+    getFriends: (root, {}) => {
+      return new Promise((resolve, object) => {
+        Friends.find({}, (err, friends) => {
+          err ? reject(err) : resolve(friends)
+        });
+      });
+    },
+
+    getOneAlien: (root, { id }) => {
+      return Aliens.findOne({ where: { id: id } });
+    },
+
     getAliens: () => {
       return Aliens.findAll();
     }
